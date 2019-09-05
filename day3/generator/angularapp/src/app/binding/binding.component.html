@@ -1,0 +1,27 @@
+<h2 class="text-center"> Welcome to binding session :: {{title}}</h2>
+<app-invoice></app-invoice>
+<input type="text" [(ngModel)]="title">
+
+
+<h3 class="mycolor">
+        Click the Framework to enroll</h3>
+    <br/>
+     <li *ngFor="let item of items" 
+           (click)="onItemClicked(item)">
+           {{item.name}}
+     </li>  
+
+
+     
+  <div *ngIf="clicked; then show else warn"></div>
+  
+  <ng-template #show>
+        You have selected : 
+      <input type="text"  [(ngModel)]="clickedItem.name">
+  </ng-template>
+
+ <ng-template #warn>          
+     <h4 class="text-danger"> 
+          Select your framework !
+     </h4>       
+ </ng-template>

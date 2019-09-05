@@ -22,7 +22,7 @@ var User = mongoose.model('User', {name: String, roles: Array, age: Number});
 //Lets create a new user
 var user1 = new User(
 	{name: 'admin', 
-	 age: 42,
+	 age: 42, 
 	 roles: ['admin', 'moderator', 'user']});
 //Lets save it
 user1.save(function (err, userObj) {
