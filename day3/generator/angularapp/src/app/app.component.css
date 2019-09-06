@@ -1,0 +1,11 @@
+a{
+    background:lightgrey;
+    margin:10px
+}
+a:hover{
+    background-color:yellow
+}
+/* everywhere else */
+* { 
+  font-family: Arial, Helvetica, sans-serif; 
+}

@@ -21,6 +21,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { LoginComponent } from './spa/components/login/login.component';
+import { SPArouting } from './app.routing';
+import { ContactListComponent } from './spa/components/contactlist.component';
+import { ShowComponent } from './spa/components/show.component';
+import { NewContactComponent } from './spa/components/newcontact.component';
+import { ServiceComponent } from './spa/components/service.component';
 // import { IOModule } from './input-output/io.module';
 
 @NgModule({
@@ -31,13 +37,19 @@ import { MatListModule } from '@angular/material/list';
     // CompLifeCycleComponent,
     HttpComponent,
     NavbarComponent,
+    LoginComponent,
+    ContactListComponent,
+    ShowComponent,
+    NewContactComponent,
+    ServiceComponent
     // HttpdComponent
     
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    // AppRoutingModule,
+    SPArouting,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
