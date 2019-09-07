@@ -1,5 +1,13 @@
-mean/node_modules/
 
 day2\expressd\casestudy\node_modules
 
 day3\generator\angularapp\node_modules
+
+restapi\node_modules
+
+ui-app\node_modules
+/restapi/node_modules/
+/day2/expressd/node_modules/
+/day2/mongod/node_modules/
+/day2/websockets/node_modules/
+/day1/node_modules/

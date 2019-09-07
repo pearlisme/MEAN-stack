@@ -1,0 +1,17 @@
+<h2>Product List</h2>
+
+<div>
+  <button class="btn btn-primary" (click)="add()">
+    Add
+  </button>
+</div>
+
+<ul class="products list-group">
+  <li *ngFor="let p of products; let i=index;" class="list-group-item">
+    <a routerLink="/products-details/{{p._id}}">
+      <span class="badge badge-secondary">{{i+1}}</span> {{p.prod_name}}
+    </a>
+    <button class="delete btn btn-danger btn-xs" title="delete product"
+      (click)="delete(p._id)">x</button>
+  </li>
+</ul>

@@ -1,0 +1,29 @@
+
+      
+<table class="table">
+    <tr>
+        <td>Product Name:</td>
+        <td>
+                <input class="form-control" [(ngModel)]="productData.prod_name" placeholder="Product Name"/>
+        </td>
+    </tr>
+
+    <tr>
+            <td>Product Desc:</td>
+            <td>
+                    <input class="form-control" [(ngModel)]="productData.prod_desc" placeholder="Product Description"/>
+            </td>
+        </tr>
+        <tr>
+                <td>Product Price:</td>
+                <td>
+                        <input class="form-control" [(ngModel)]="productData.prod_price" placeholder="Product Price"/>
+                </td>
+        </tr>
+
+        <tr>
+            <td>
+                    <button class="btn btn-primary" (click)="addProduct()">Save</button>
+            </td>
+        </tr>
+</table>

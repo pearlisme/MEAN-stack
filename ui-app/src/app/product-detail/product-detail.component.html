@@ -1,0 +1,31 @@
+<div *ngIf="product" class="products">
+    <h6>{{product.prod_name | uppercase}} Details</h6>
+   
+<table class="table">
+   <tr>
+       <td>
+           Description
+       </td>
+       <td>
+            {{product.prod_desc}}
+       </td>
+   </tr>
+       <tr>
+            <td>Price</td>
+            <td>{{product.prod_price}}</td>
+       </tr>
+       <tr>
+            <td>Update Date:</td>
+            <td>{{product.updated_at | date}}</td>
+       </tr>
+       <tr>
+           <td>
+                <button class="btn btn-info" routerLink="/products-edit/{{product._id}}">
+                    Edit
+                  </button>
+           </td>
+           <td></td>
+       </tr>
+
+</table>
+</div>
