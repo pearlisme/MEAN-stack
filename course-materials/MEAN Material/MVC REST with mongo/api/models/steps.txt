@@ -1,0 +1,14 @@
+1. install mongoose, body-parser and express
+2.write code
+3. Run node server.js
+4. Open postman and use http://localhost:3000/tasks 
+    method:post
+    click body --> Raw 
+    enter 
+    {
+        "name":"Learn Mongodb"
+    }
+    click send and observe new document is inserted
+5. Open Robo 3T  and observe the database and document.
+6. Try CRUD from Postman.
+------------------------------------------------------------------

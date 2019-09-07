@@ -1,0 +1,4 @@
+•	run npm install after cloning
+•	make sure that you have mongod running on default 27017 port
+•	run node server from the root of the application (where the server.js file is placed)
+•	if you'll want to test the Facebook and Twitter logins (and they don't work out of the box for you) you'll have to create your own Facebook and Twitter applications by following the steps in the User authentication with Passport

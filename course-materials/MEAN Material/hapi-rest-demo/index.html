@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body ng-app="myApp" ng-controller="storeController">
+        <h1 style="background:yellow">Amazon products from store</h1>
+        <ul ng-repeat="product in data">
+            <li>{{product.prodname}} - {{product.price}}</li>
+        </ul>
+        <script src="angular.js"></script>
+        <script src="myapp.js"></script>
+    </body>
+</html>

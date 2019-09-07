@@ -1,0 +1,12 @@
+{
+  "name": "container",
+  "version": "1.0.0",
+  "description": "Trying to publish first custom module",
+  "main": "app.js",
+   "scripts": {
+     "start":"node app.js"
+    },
+  "private":false,
+  "author": "Murthy",
+  "license": "ISC"
+}

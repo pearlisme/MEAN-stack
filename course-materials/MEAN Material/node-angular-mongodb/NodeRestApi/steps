@@ -1,0 +1,32 @@
+Steps:
+------
+1. create restapi project with  below command in DOS prompt.
+c:\>express restapi
+c:\>cd restapi
+c:\> npm install 
+
+npm install body-parser@1.16 --save
+npm install cors@2.8.4 --save
+npm install ejs@2.5.5 --save
+npm install method-override@2.3.7 --save
+npm install  mongoose@4.8.3 --save
+npm install node-restful@0.2.6 --save
+
+completed server side module installation.
+write routes , CRUD logic
+-----------------------------------
+
+client side application:
+
+ng g component  product
+ng g component product-add
+ng g component product-detail
+ng g component product-edit
+
+add code for all components.
+
+Add route configuration with in app.module and impor in 
+ngModule.
+
+Run the server : ng serve
+----------------------
