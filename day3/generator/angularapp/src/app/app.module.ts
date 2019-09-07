@@ -8,7 +8,6 @@ import { BindingComponent} from './binding/binding.component';
 import { InvoiceComponent } from './invoice/invoice.component'
 
 import { FormsModule } from '@angular/forms';
-// import { OrderComponent } from './order/order.component';
 import { IOModule } from './input-output/io.module';
 import { DIModule } from './di/di.module';
 import { CompLifeCycleComponent } from './lifecycle/lifecycle.component';

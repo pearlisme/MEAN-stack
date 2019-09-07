@@ -14,7 +14,7 @@ export interface IPriceQuote {
     selector: 'price-quoter',
     template: `<h3 class="well text-danger">
                 Child PriceQuoterComponent:
-                      {{company}} 
+                      {{company}}
                       {{price | currency:'USD' }}
                </h3>
                `
@@ -22,14 +22,14 @@ export interface IPriceQuote {
  export class PriceQuoterComponent {
     @Output()
     lastPriceEvent: EventEmitter<IPriceQuote> = new EventEmitter();
-    company: string = "Bank of America";
+    company: string = "System";
     price: number;
     constructor() {
         window.setInterval(() => {
             let priceQuote: IPriceQuote = {
                 stockSymbol: this.company,
-                lastPrice: 100 * Math.random(), 
-                                                          
+                lastPrice: 100 * Math.random(),
+
               };
             this.price = priceQuote.lastPrice;
             this.lastPriceEvent.emit(priceQuote);//Raise Event
@@ -43,14 +43,14 @@ export interface IPriceQuote {
     template: `
     <div class='container'>
         <h1 class='text-success'>
-        Parent Component received: 
+        Parent Component received:
         {{stockSymbol}} - {{price | currency:'USD'}}
         </h1>
 
    <price-quoter (lastPriceEvent)="priceQuoteHandler($event)" >
        </price-quoter>
 
-    <app-mail  [info]="stockInfo"></app-mail> 
+    <app-mail  [info]="stockInfo"></app-mail>
     </div>
     `
 })
@@ -58,11 +58,11 @@ export class OutputComponent {
     stockSymbol: string;
     price: number;
     stockInfo:IPriceQuote ={'stockSymbol':' ','lastPrice':0,};
-    
+
     priceQuoteHandler(event: IPriceQuote) {
         this.stockSymbol = event.stockSymbol;
         this.price = event.lastPrice;
-        this.stockInfo=  
+        this.stockInfo=
              {'stockSymbol':event.stockSymbol,  'lastPrice':event.lastPrice};
     }
 }
@@ -80,7 +80,7 @@ export class OutputComponent {
     `
 })
 export class  MailComponent {
-    @Input() 
+    @Input()
     info:IPriceQuote;
 }//end
 
