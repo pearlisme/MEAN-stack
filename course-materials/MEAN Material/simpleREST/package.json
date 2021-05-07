@@ -13,6 +13,6 @@
     "body-parser": "^1.19.0",
     "connect-livereload": "^0.6.1",
     "express": "^4.15.2",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   }
 }
